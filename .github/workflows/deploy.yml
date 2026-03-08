@@ -19,6 +19,6 @@ jobs:
         with:
           server: tesconn.com
           username: tesconnc
-password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /home/tesconnc/public_html/
