@@ -21,4 +21,4 @@ jobs:
           username: deploy@tesconn.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /home/tesconnc/public_html/
+          server-dir: /public_html/
