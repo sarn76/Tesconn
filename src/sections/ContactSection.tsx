@@ -49,7 +49,7 @@ export function ContactSection() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-slate-200">
+            <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <div className="grid sm:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1.5">

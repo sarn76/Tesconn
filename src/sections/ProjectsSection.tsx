@@ -50,7 +50,7 @@ export function ProjectsSection() {
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={0.15}>
           {projects.map((project) => (
             <StaggerItem key={project.title}>
-              <motion.div className="group cursor-pointer" whileHover={{ y: -4 }} transition={{ duration: 0.3 }}>
+              <motion.div className="group cursor-pointer hover:shadow-lg transition-shadow" whileHover={{ y: -4 }} transition={{ duration: 0.3 }}>
                 <div className="relative overflow-hidden rounded-xl mb-4 aspect-[4/3]">
                   <motion.img
                     src={project.image}

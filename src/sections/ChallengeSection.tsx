@@ -35,7 +35,7 @@ export function ChallengeSection() {
             {challenges.map((challenge) => (
               <StaggerItem key={challenge.title}>
                 <motion.div
-                  className="bg-slate-50 rounded-xl p-6 h-full"
+                  className="bg-slate-50 rounded-xl p-6 h-full hover:shadow-lg transition-shadow"
                   whileHover={{ y: -4 }}
                   transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
                 >

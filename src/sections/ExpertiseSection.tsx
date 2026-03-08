@@ -48,7 +48,7 @@ export function ExpertiseSection() {
         <div className="grid lg:grid-cols-3 gap-6">
           <AnimatedSection className="lg:col-span-2 lg:row-span-2">
             <motion.div
-              className="relative h-full min-h-[400px] rounded-2xl overflow-hidden group cursor-pointer"
+              className="relative h-full min-h-[400px] rounded-2xl overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow"
               whileHover={{ y: -4 }}
               transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
             >
@@ -82,7 +82,7 @@ export function ExpertiseSection() {
             {services.slice(1, 3).map((service) => (
               <StaggerItem key={service.title}>
                 <motion.div
-                  className="bg-white border border-slate-200 rounded-xl p-6 h-full"
+                  className="bg-white border border-slate-200 rounded-xl p-6 h-full hover:shadow-lg transition-shadow"
                   whileHover={{ y: -4 }}
                   transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
                 >
@@ -102,7 +102,7 @@ export function ExpertiseSection() {
             {services.slice(3).map((service) => (
               <StaggerItem key={service.title}>
                 <motion.div
-                  className="bg-white border border-slate-200 rounded-xl p-6 flex items-start gap-4"
+                  className="bg-white border border-slate-200 rounded-xl p-6 flex items-start gap-4 hover:shadow-lg transition-shadow"
                   whileHover={{ y: -4 }}
                   transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
                 >
