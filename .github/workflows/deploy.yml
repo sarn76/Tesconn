@@ -13,12 +13,12 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: chmod +x ./node_modules/.bin/*
-      - run: npm run server
+      - run: npm run build
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-server: ftp.tesconn.com
-username: deploy@tesconn.com
-password: ${{ secrets.FTP_PASSWORD }}
-local-dir: ./dist/
-server-dir: /
+          server: ftp.tesconn.com
+          username: deploy@tesconn.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: /
