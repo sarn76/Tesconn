@@ -18,8 +18,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.tesconn.com
-          username: deploy@tesconn.com
+          username: deploy2@tesconn.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /
+          server-dir: /public_html/
           dangerous-clean-slate: true
