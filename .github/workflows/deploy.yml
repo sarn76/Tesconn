@@ -18,7 +18,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: tesconn.com
-          username: tesconnc@tesconn.com
+          username: tesconncpanel@tesconn.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /home/tesconnc/public_html/
